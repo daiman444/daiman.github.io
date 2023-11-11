@@ -143,6 +143,25 @@ main {
     line-height: 1.5;
 }
 
+.contact_me {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    color: var(--main-color) ;
+}
+
+.contact_me ul {
+    line-height: 1.5;
+    justify-self: flex-start;
+    font-size: 2em;
+    margin: 10px;
+    text-align: start;
+}
+
 footer {
     display: flex;
     flex-wrap: wrap;
