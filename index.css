@@ -108,6 +108,30 @@ main {
     text-align: center;
 }
 
+.about_me {
+    width: 80%;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    color: var(--main-color) ;
+}
+
+.about_me p {
+    font-size: 1.5em;
+    justify-self: flex-start;
+    margin: 10px;
+    text-align: justify;
+}
+
+.about_me ul{
+    align-self: flex-start;
+    line-height: 2;
+}
+
 .work_experience {
     width: 80%;
     display: flex;
@@ -144,6 +168,7 @@ main {
 }
 
 .contact_me {
+    width: 80%;
     display: flex;
     align-self: center;
     flex-direction: column;
