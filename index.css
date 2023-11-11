@@ -26,7 +26,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    height: 100%;
     margin: 0px;
     background-color: var(--body-bg);
 }
@@ -88,8 +87,9 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 60%;
-    margin: 20px;
+    height: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .my_slogan {
@@ -106,9 +106,70 @@ main {
 .my_slogan p {
     margin: 10px;
     text-align: center;
-
 }
 
+.work_experience {
+    width: 80%;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--main-color) ;
+}
 
+.work_experience h1 {
+    align-self: flex-start;
+    margin: 10px;
+    text-align: start; 
+}
 
+.work_experience h2 {
+    align-self: flex-start;
+    margin: 10px;
+    text-align: start; 
+}
 
+.work_experience p {
+    align-self: flex-start;
+    margin: 10px;
+    text-align: justify; 
+    line-height: 1.5;
+}
+
+.work_experience ul{
+    align-self: flex-start;
+    line-height: 1.5;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--header-bg);
+    border-top: 2px solid var(--header-border-bottom);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+footer a {
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    margin: 0px;
+    padding: 30px;
+    color: var(--header-a);
+}
+
+footer a:hover {
+    color: var(--header-a-hover);
+    text-shadow: 0px 0px 5px rgba(var(--header-a-shadow),.6);
+} 
+
+footer a:active {
+    color: var(--header-a-active);
+}
