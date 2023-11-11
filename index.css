@@ -225,7 +225,7 @@ main {
     text-shadow: 0px 0px 5px rgba(var(--header-a-shadow),.6);
 } 
 
-my_projects a:active {
+.my_projects a:active {
     color: var(--header-a-active);
 } 
 
@@ -247,6 +247,26 @@ my_projects a:active {
     font-size: 2em;
     margin: 10px;
     text-align: start;
+}
+
+.contact_me a {
+    text-decoration: none;
+    align-self: flex-start;
+    margin: 10px;
+    text-align: justify; 
+    line-height: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--main-color) ;
+}
+
+.contact_me a:hover {
+    color: var(--main-color) ;
+    color: var(--header-a-hover);
+    text-shadow: 0px 0px 5px rgba(var(--header-a-shadow),.6);
+} 
+
+.contact_me a:active {
+    color: var(--header-a-active);
 }
 
 footer {
