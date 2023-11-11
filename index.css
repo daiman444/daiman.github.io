@@ -68,6 +68,7 @@ header a {
     line-height: 60px;
     font-size: 30px;
     font-weight: bold;
+    text-decoration: none;
 
     padding: 30px;
     color: var(--header-a);
@@ -105,6 +106,7 @@ main {
 .my_slogan p {
     margin: 10px;
     text-align: center;
+
 }
 
 
