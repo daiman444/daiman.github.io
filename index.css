@@ -1,8 +1,8 @@
 @charset 'utf-8';
 
 :root{
-    --body-bg: rgb(88, 88, 88);
-    --header-bg: rgb(66, 66, 66);
+    --body-bg: rgb(0, 0, 0);
+    --header-bg: rgba(66, 66, 66, .50);
     --header-border-bottom:rgb(61, 131, 43);
     --header-h1: green;
     --header-h1-shadow: rgb(104, 250, 104);
@@ -11,10 +11,21 @@
     --header-a-shadow: 104, 250, 104;
     --header-a-hover: rgb(8, 139, 8);
     --header-a-active: rgb(8, 87, 8);
+
+    --main-color: rgb(104, 250, 104);
     
 }
 
+html {
+    height: 100%;
+    width: 100%;
+}
+
 body {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     height: 100%;
     margin: 0px;
     background-color: var(--body-bg);
@@ -25,7 +36,6 @@ header {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    /* height: 100px; */
     background-color: var(--header-bg);
     border-bottom: 2px solid var(--header-border-bottom);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -71,5 +81,32 @@ header a:hover {
 header a:active {
     color: var(--header-a-active);
 } 
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    margin: 20px;
+}
+
+.my_slogan {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3em;
+    color: var(--main-color) ;
+}
+
+.my_slogan p {
+    margin: 10px;
+    text-align: center;
+}
+
+
 
 
