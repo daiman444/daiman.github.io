@@ -3,3 +3,7 @@
 :root{
     --color: rgb(39, 245, 39);
 }
+
+body {
+    background-color: gray;
+}
