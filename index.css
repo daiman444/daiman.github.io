@@ -1,11 +1,61 @@
 @charset 'utf-8';
 
 :root{
-    --color: rgb(39, 245, 39);
+    --color-green: rgb(0, 255, 0);
+    --color-green-light: rgb(117, 252, 117);
+    --color-green-dark: rgb(11, 207, 11);
 }
 
 body {
-    background-color: gray;
-    color: var(--color);
+    height: 100%;
+    margin: 0px;
+    background-color: rgb(88, 82, 82);
+    color: var(--color-green);
 }
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    background-color: rgba(32, 30, 30, 0.377);
+    border-bottom: 2px solid rgb(21, 99, 2);
+}
+
+header h1 {
+    line-height: 60px;
+    margin: 20px;
+    font-size: 50px;
+}
+
+
+
+ul {
+    margin: 0px;
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    margin: 20px;
+    font-size: 40px;
+    line-height: 60px;
+}
+
+a {
+    list-style: none;
+    color: var(--color-green);
+}   
+
+a:hover {
+    background-color: aquamarine;
+    list-style: none;
+    color: var(--color-green-light);
+} 
+
+a:active {
+    list-style: none;
+    color: var(--color-green-dark);
+} 
+
 
