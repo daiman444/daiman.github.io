@@ -1,61 +1,74 @@
 @charset 'utf-8';
 
 :root{
-    --color-green: rgb(0, 255, 0);
-    --color-green-light: rgb(117, 252, 117);
-    --color-green-dark: rgb(11, 207, 11);
+    --body-bg: rgb(88, 88, 88);
+    --header-bg: rgb(66, 66, 66);
+    --header-border-bottom:rgb(61, 131, 43);
+    --header-h1: green;
+    --header-h1-shadow: rgb(104, 250, 104);
+    --header-a: rgb(3, 102, 3);
+    --header-a-shadow: rgb(104, 250, 104);
+    --header-a-hover: rgb(8, 139, 8);
+    --header-a-active: rgb(8, 87, 8);
+    
 }
 
 body {
     height: 100%;
     margin: 0px;
-    background-color: rgb(88, 82, 82);
-    color: var(--color-green);
+    background-color: var(--body-bg);
 }
 
 header {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    height: 100px;
-    background-color: rgba(32, 30, 30, 0.377);
-    border-bottom: 2px solid rgb(21, 99, 2);
+    /* height: 100px; */
+    background-color: var(--header-bg);
+    border-bottom: 2px solid var(--header-border-bottom);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header h1 {
+    display: block;
     line-height: 60px;
     margin: 20px;
     font-size: 50px;
+    font-weight: bold;
+    color: var(--header-h1);
 }
 
-
-
-ul {
+header navbar {
+    padding: 0px;
     margin: 0px;
-    list-style: none;
 }
 
-li {
-    display: inline-block;
-    margin: 20px;
-    font-size: 40px;
+header ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+header a {
     line-height: 60px;
-}
+    font-size: 30px;
+    font-weight: bold;
 
-a {
-    list-style: none;
-    color: var(--color-green);
+    padding: 30px;
+    color: var(--header-a);
 }   
 
-a:hover {
-    background-color: aquamarine;
-    list-style: none;
-    color: var(--color-green-light);
+header a:hover {
+    color: var(--header-a-hover);
+    text-shadow: 0px 0px 2px var(--header-h1-shadow);
 } 
 
-a:active {
-    list-style: none;
-    color: var(--color-green-dark);
+header a:active {
+    color: var(--header-a-active);
 } 
 
 
